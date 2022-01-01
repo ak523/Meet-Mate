@@ -1,7 +1,7 @@
 var isOn = false, textToBeSearched = '';
 
 // Audio URI to prevent loading issues
-const audioURI = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+const audioURI = "https://github.com/ak523/Satark/blob/main/2.mp3";
 
 // Message comes here when user enter the text to lookout for in popup
 chrome.runtime.onMessage.addListener(({ keyword }) => {
@@ -38,7 +38,7 @@ const searchText = () => {
                         captions.forEach((caption) => {
                             var words = caption.innerHTML.split(' ');           // Breaks a caption element into words
                             words.forEach(word => {                             // Tests each word for lookout text
-                                if ((word === '${textToBeSearched}'  ||
+                                if ((word === '${textToBeSearched} '  ||
                                     word === '${textToBeSearched},' ||
                                     word === '${textToBeSearched}.' ||
                                     word === '${textToBeSearched}?' ||
