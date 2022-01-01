@@ -1,7 +1,7 @@
 var isOn = false, textToBeSearched = '';
 
 // Audio URI to prevent loading issues
-const audioURI = "https://github.com/ak523/Satark/blob/main/2.mp3";
+const audioURI = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
 // Message comes here when user enter the text to lookout for in popup
 chrome.runtime.onMessage.addListener(({ keyword }) => {
